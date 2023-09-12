@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL ]()
-- Live Site URL: [Live site]()
+- Solution URL: [Solution URL ](https://www.frontendmentor.io/solutions/responsive-and-interactive-newsletter-signup-with-a-success-message-wJhqUtJmPS)
+- Live Site URL: [Live site](https://yab1.github.io/newsletter-sign-up-with-success-message/)
 
 ### Built with
 
