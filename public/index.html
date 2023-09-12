@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="output.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="h-full lg:bg-dark-slate-grey text-dark-slate-grey lg:place-items-center lg:grid lg:h-screen lg:grid-cols-12 lg:grid-rows-6"
+  >
+    <section
+      id="sign-up-page"
+      class="grid bg-white lg:flex lg:rounded-3xl lg:col-start-3 lg:col-span-8 lg:row-start-2 lg:row-span-4 lg:flex-row-reverse lg:place-items-center lg:pl-10 lg:pr-5"
+    >
+      <aside
+        class="lg:col-start-8 lg:col-span-5 lg:row-start-1 lg:flex-initial justify-self-center"
+      >
+        <picture>
+          <source
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width:1024px)"
+            height="400"
+            width="300"
+          />
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt="illustration-sign-up"
+          />
+        </picture>
+      </aside>
+
+      <aside
+        class="flex px-5 flex-col gap-9 lg:gap-5 py-10 lg:col-start-1 lg:col-span-6 lg:row-start-1 lg:flex-initial lg:w-[400px] lg:pr-10 lg:pl-0 justify-self-center"
+      >
+        <h1 class="font-bold text-4xl">Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div>
+          <ul class="grid gap-3">
+            <li class="flex gap-3">
+              <img
+                src="assets/images/icon-list.svg"
+                alt="icon-list"
+                class="self-start"
+              />Product discovery and building what matters
+            </li>
+            <li class="flex gap-3">
+              <img
+                src="assets/images/icon-list.svg"
+                alt="icon-list"
+                class="self-start"
+              />
+              Measuring to ensure updates are a success
+            </li>
+            <li class="flex gap-3">
+              <img
+                src="assets/images/icon-list.svg"
+                alt="icon-list"
+                class="self-start"
+              />And much more!
+            </li>
+          </ul>
+        </div>
+
+        <form action="" class="flex flex-col">
+          <label
+            for="email"
+            data-errorMsg="Valid email required"
+            class="text-xs text-dark-slate-grey px-1 font-bold mb-2 relative after:hidden after:absolute after:bottom-3 after:h-1 after:text-tomato after:right-1 after:content-[attr(data-errorMsg)] after:font-bold after:text-xs"
+            >Email address</label
+          >
+          <input
+            id="email"
+            type="email"
+            placeholder="email@company.com"
+            class="border py-4 rounded-lg pl-5 outline-none border-grey text-charcoal-grey focus:border-charcoal-grey"
+          />
+          <button
+            id="submit-btn"
+            type="submit"
+            class="py-4 bg-dark-slate-grey rounded-lg text-white mt-7 font-bold hover:bg-tomato"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </aside>
+    </section>
+    <dialog
+      class="gap-6 flex-col pt-20 pb-10 h-screen text-dark-slate-grey md:w-96 md:rounded-3xl md:gap-6 md:p-10 md:h-fit"
+    >
+      <picture>
+        <img
+          src="assets/images/icon-success.svg"
+          alt="icon-success"
+          class="md:w-11"
+        />
+      </picture>
+      <h1 class="font-bold text-4xl">Thanks for subscribing!</h1>
+      <p class="md:text-sm font-light">
+        A confirmation email has been sent to
+        <span id="userEmail" class="font-bold"></span>. Please open it and click
+        the button inside to confirm your subscription.
+      </p>
+      <button
+        id="dismiss-btn"
+        type="submit"
+        class="py-4 bg-dark-slate-grey rounded-lg text-white font-bold hover:bg-tomato mt-auto md:mt-0 md:py-3 w-full"
+      >
+        Dismiss message
+      </button>
+    </dialog>
+    <script src="../script.js"></script>
+  </body>
+</html>

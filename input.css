@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  ---darkSlateGrey: ;
+}
+
+h3 {
+  @apply text-5xl text-red-600;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  height: 100vh;
+}
+
+input:focus {
+  border-color: red;
+}
+
+dialog {
+  border: none;
+}
+
+dialog::backdrop {
+  background-color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  dialog::backdrop {
+    background-color: hsl(234, 29%, 20%);
+  }
+}
