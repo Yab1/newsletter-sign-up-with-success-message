@@ -22,7 +22,16 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot]()
+<table>
+  <tr>
+    <td><img src="https://github.com/Yab1/newsletter-sign-up-with-success-message/blob/master/public/assets/screenshot-desktop-preview.png" alt="Desktop Signup Page" width="400"/></td>
+    <td><img src="https://github.com/Yab1/newsletter-sign-up-with-success-message/blob/master/public/assets/screenshot-desktop.png" alt="Desktop Confirmation Popup" width="400"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/Yab1/newsletter-sign-up-with-success-message/blob/master/public/assets/screenshot-mobile-preview.png" alt="Mobile Signup Page" width="400"/></td>
+    <td><img src="https://github.com/Yab1/newsletter-sign-up-with-success-message/blob/master/public/assets/screenshot-mobile.png" alt="Mobile Confirmation Popup" width="400"/></td>
+  </tr>
+</table>
 
 ### Links
 
